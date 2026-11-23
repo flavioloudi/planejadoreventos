@@ -39,6 +39,9 @@
       state = { version: 1, currentId: p.id, plans: [p] };
       persist();
     }
+    let renamed = false;
+    state.plans.forEach((p) => { if (p.settings && p.settings.name === 'Planejamento institucional (demonstração)') { p.settings.name = 'Planejamento Institucional'; renamed = true; } });
+    if (renamed) persist();
     if (!state.plans.some((p) => p.id === state.currentId)) state.currentId = state.plans[0].id;
     return state;
   }
