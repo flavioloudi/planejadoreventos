@@ -4,7 +4,7 @@
   const D = PA.Dates;
 
   function build(name) {
-    const p = PA.Store.newPlan(name || 'Planejamento institucional (demonstração)', true);
+    const p = PA.Store.newPlan(name || 'Planejamento Institucional', true);
     p.settings.city = 'São Paulo';
     p.settings.state = 'SP';
     p.settings.maxPerDay = 3;
