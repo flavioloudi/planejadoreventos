@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planejador Inteligente de Atividades</title>
+  <meta name="description" content="Planeje, valide e gere cronogramas de atividades com detecção de conflitos, feriados e datas especiais.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M9 12h14M9 17h8M9 22h5' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <aside id="sidebar" class="sidebar" aria-label="Menu principal"></aside>
+    <div id="backdrop" class="backdrop"></div>
+    <div class="main">
+      <header id="topbar" class="topbar"></header>
+      <main id="view" class="view" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="modals"></div>
+
+  <script src="js/core/dates.js"></script>
+  <script src="js/core/constants.js"></script>
+  <script src="js/engine/specials.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/core/demo.js"></script>
+  <script src="js/engine/planner.js"></script>
+  <script src="js/engine/conflicts.js"></script>
+  <script src="js/engine/validator.js"></script>
+  <script src="js/engine/scheduler.js"></script>
+  <script src="js/engine/nlp.js"></script>
+  <script src="js/engine/insights.js"></script>
+  <script src="js/engine/reports.js"></script>
+
+  <script src="js/ui/ui.js"></script>
+  <script src="js/ui/forms.js"></script>
+  <script src="js/ui/pages/dashboard.js"></script>
+  <script src="js/ui/pages/proposals.js"></script>
+  <script src="js/ui/pages/generator.js"></script>
+  <script src="js/ui/pages/calendar.js"></script>
+  <script src="js/ui/pages/center.js"></script>
+  <script src="js/ui/pages/specials.js"></script>
+  <script src="js/ui/pages/conflicts.js"></script>
+  <script src="js/ui/pages/reports.js"></script>
+  <script src="js/ui/pages/settings.js"></script>
+  <script src="js/ui/app.js"></script>
+</body>
+</html>
